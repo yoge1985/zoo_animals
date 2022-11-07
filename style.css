@@ -16,9 +16,9 @@ body {
 
 .container {
     width: 80%;
-    height: 70%;
+    height: max-content;
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.87;
 }
 
 h1 {
@@ -28,15 +28,16 @@ h1 {
 }
 
 .animal-container {
+    height: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
 .animal-name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.4rem;
+    font-family: 'Dancing Script', serif;
+    font-size: 2rem;
 }
 
 .next-animal {
@@ -49,9 +50,16 @@ h1 {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
 
 .next-animal:hover {
     cursor: pointer;
     background-color: #C70039;
+}
+
+#animal-pic {
+    width: 15rem;
+    height: 12rem;
+    border-radius: 50%;
 }

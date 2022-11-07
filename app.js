@@ -3,6 +3,7 @@ const animalContainer = document.querySelector('.animal-container');
 const animalName = document.querySelector('.animal-name');
 const animalPic = document.getElementById('animal-pic');
 const animalLifespan = document.querySelector('.animal-lifespan');
+const animalOrigin = document.querySelector('.animal-origin');
 // const animalHabitat = doucment.querySelector('.animal-habitat');
 const nextAnimalBtn = document.querySelector('.next-animal');
 
@@ -30,7 +31,8 @@ async function getAnimalInfo() {
     animalName.innerHTML = apiAnimals.name;
     animalLifespan.innerHTML = 'LIFESPAN:' + ' ' + apiAnimals.lifespan;
     // animalHabitat.innerHTML = 'HABITAT:' + ' ' + apiAnimals.habitat;
-    animalPic.src = apiAnimals.image_link;
+    animalPic.src = './assets/new background.jpg';
+    animalOrigin.innerHTML = "ORIGIN:" + ' ' + apiAnimals.geo_range;
 
 }
 
