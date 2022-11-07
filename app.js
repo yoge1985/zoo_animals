@@ -1,11 +1,12 @@
 let apiAnimals;
 const animalContainer = document.querySelector('.animal-container');
 const animalName = document.querySelector('.animal-name');
+const diet = document.getElementById('animal-diet');
 const animalPic = document.getElementById('animal-pic');
 const animalLifespan = document.querySelector('.animal-lifespan');
 const animalOrigin = document.querySelector('.animal-origin');
-// const animalHabitat = doucment.querySelector('.animal-habitat');
 const nextAnimalBtn = document.querySelector('.next-animal');
+
 
 //event listener for next animal button
 nextAnimalBtn.addEventListener('click', getAnimal);
@@ -30,7 +31,7 @@ async function getAnimal () {
 async function getAnimalInfo() {
     animalName.innerHTML = apiAnimals.name;
     animalLifespan.innerHTML = 'LIFESPAN:' + ' ' + apiAnimals.lifespan;
-    // animalHabitat.innerHTML = 'HABITAT:' + ' ' + apiAnimals.habitat;
+    diet.innerHTML = 'DIET:' + ' ' + apiAnimals.diet;
     animalPic.src = './assets/new background.jpg';
     animalOrigin.innerHTML = "ORIGIN:" + ' ' + apiAnimals.geo_range;
 

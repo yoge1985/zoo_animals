@@ -15,10 +15,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     height: max-content;
     background-color: #fff;
     opacity: 0.87;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px rgba(255,255,255, 0.5);
 }
 
 h1 {
