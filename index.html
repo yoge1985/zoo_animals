@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Zoo Animals</title>
 </head>
@@ -26,7 +27,19 @@
                 <p id="animal-diet"></p>
                 <p class="animal-origin"></p>
             </div>
-            <button class="next-animal">Next Animal</button>
+            <div class="buttons">
+                <button class="next-animal">Next Animal</button>
+                <a href="#"><i class="search fa fa-search"></i></a>
+            </div>
+            <!--popup container-->
+            <div class="popup">
+                <img src="" alt="">
+                <h2>search Animal</h2>
+                <form action="">
+                    <input type="text" class="animal-searched" placeholder="search animal">
+                    <button id="search-animal" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </div>
     
